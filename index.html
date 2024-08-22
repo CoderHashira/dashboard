@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Google Material Icons -->
+    <!-- https://material.io/resources/icons/?style=outline -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    
+    <!-- 
+        1. Find a way to add google fonts without them conflicting with the google font icons
+        2. Used decapritated google fonts icons and not the new ones
+     -->
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Header -->
+         <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">
+                    search
+                </span>
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
+         </header>
+        <!-- End Header -->
+
+
+        <!-- Sidebar -->
+         <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons-outlined">shopping_cart</span> Store
+                </div>
+                <span class="material-symbols-outlined" onclick="closeSidebar()"> close </span>
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined"> dashboard </span> Dashboard
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined"> inventory_2 </span> Product
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined"> category </span> Categories
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined"> groups </span> Customers
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined"> fact_check </span> Inventory
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined"> poll </span> Reports
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined"> settings </span> Settings
+                </li>
+            </ul>
+         </aside>
+        <!-- End Sidebar -->
+
+        <main class="main-container">
+            <div class="main-title">
+                <h2> Dashboard </h2>
+            </div>
+
+
+            <div class="main-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <h3> PRODUCTS </h3>
+                        <span class="material-icons-outlined">inventory_2</span>
+                    </div>
+                    <h3> 249 </h3>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3> CATEGORIES </h3>
+                        <span class="material-icons-outlined">category</span>
+                    </div>
+                    <h3> 25 </h3>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3> CUSTOMERS </h3><span class="material-icons-outlined">groups</span>
+                    </div>
+                    <h3> 1500 </h3>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3> ALERTS </h3><span class="material-icons-outlined">notification_important</span>
+                    </div>
+                    <h3> 600 </h3>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <!-- Custom JS -->
+    <script src="./js/index.js"> </script>
+</body>
+</html>
